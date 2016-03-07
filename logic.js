@@ -1,5 +1,7 @@
 $( document ).ready( function () 
 {
+    var time = +prompt("Delay in ms?") || 700;
+
     var game  = $("#game"),
         score = $("#score"),
         countScore = 0;
@@ -26,6 +28,6 @@ $( document ).ready( function ()
         });
 
     };
-    setInterval( newTarget, 4000 );
+    setInterval( newTarget, time );
 
 } );
