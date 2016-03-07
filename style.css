@@ -1,0 +1,32 @@
+body, html {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+#game {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	cursor: crosshair;
+}
+.target {
+	top: 0;
+	left: 0;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background: #FF8C00;
+	position: absolute;
+	border: 2px solid black;
+}
+.remove {
+	display: none;
+}
+#score {
+	position: absolute;
+	font-size: 50px;
+	left: 10px;
+	top: 10px;
+	z-index: 1;
+}
