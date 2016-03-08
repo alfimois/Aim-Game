@@ -9,7 +9,7 @@ body, html {
 	position: relative;
 	width: 100%;
 	height: 100%;
-	cursor: crosshair;
+	cursor: url(cursor.png), crosshair;
 	overflow: hidden;
 	background: url(stardust.png); 
 }
@@ -33,4 +33,8 @@ body, html {
 	top: 10px;
 	z-index: 1;
 	color: #FAEDC7;
+}
+
+#game.cursorView {
+	cursor: crosshair;
 }

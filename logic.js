@@ -8,17 +8,25 @@ $( document ).ready( function ()
     
     function random( min, max )
     {
-      return Math.floor( Math.random() * (max - min + 1) ) + min;
+        return Math.floor( Math.random() * (max - min + 1) ) + min;
     }
 
     game.on("click", function (e)
-    {
+    {   
+        console.log(1);
         e.preventDefault();
         e.stopImmediatePropagation();
+        game.addClass("cursorView");
+        setTimeout(function ()
+        {
+            game.removeClass("cursorView");
+        }, 70);
     });
+
 
 	function newTarget() 
     {
+        
         var target = $( "<div></div>", { class : "target" } ),
             left   = random( 0, game.width() - target.width() ),
             top    = random( 0, game.height() - target.height() - 20 );
@@ -28,7 +36,7 @@ $( document ).ready( function ()
             .offset({ left : left, top : top })
             .animate({transform : "scale(0.1)"}, 
                      {
-                      duration: 4000,
+                      duration: 6000,
                       easing: "linear",
                       complete: function () 
                        {
