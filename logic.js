@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    var time       = +prompt("Delay in ms?") || 700;
+    var time       = Number( prompt("Delay in ms?") ) || 700;
     var game       = $("#game");
     var score      = $("#score");
     var countScore = 0;
