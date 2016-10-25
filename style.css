@@ -11,7 +11,8 @@ body, html {
 	height: 100%;
 	cursor: none;
 	overflow: hidden;
-	background: url(stardust.png); 
+	background: url(stardust.png);
+	cursor: crosshair;
 }
 .target {
 	top: 0;
@@ -35,6 +36,3 @@ body, html {
 	color: #FAEDC7;
 }
 
-#game.cursorView {
-	cursor: crosshair;
-}
