@@ -18,8 +18,7 @@ $(document).ready(function() {
         $(target).appendTo(game);
 
         target.offset({ left : left, top : top })
-        .animate({transform : "scale(0.1)"},
-        {
+        .animate({transform : "scale(0.1)"}, {
             duration: 6000,
             easing  : "linear",
             complete: function () {
