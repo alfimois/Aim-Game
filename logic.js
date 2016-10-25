@@ -10,7 +10,7 @@ $(document).ready(function() {
     };
 
 
-	function newTarget() {
+    function newTarget() {
         var target = $("<div></div>", { class : "target" });
         var left   = random(0, game.width()  - target.width());
         var top    = random(0, game.height() - target.height() - 20);
