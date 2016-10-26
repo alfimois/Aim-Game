@@ -8,7 +8,7 @@ $(document).ready( function() {
     return Math.floor( Math.random() * (max - min + 1) ) + min;
   };
 
-	function newTarget() {
+  function newTarget() {
     var target = $("<div></div>", { class : "target" });
     var left   = random(0, game.width()  - target.width()  - 65);
     var top    = random(0, game.height() - target.height() - 65);
