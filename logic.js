@@ -17,15 +17,13 @@ $(document).ready( function() {
 
     target.offset({ left : left, top : top })
       .animate({transform : "scale(0.1)"}, {
-        duration: 6000,
+        duration: 4000,
         easing  : "linear",
         complete: function () {
-          target.addClass("remove");
           target.remove();
         }
       })
       .on("mousedown", function  () {
-        target.addClass("remove");
         target.remove();
         score.text(++countScore);
       });

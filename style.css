@@ -24,9 +24,6 @@ body, html {
 	position: absolute;
 	border: 2px solid black;
 }
-.remove {
-	display: none;
-}
 #score {
 	position: absolute;
 	font-size: 50px;
