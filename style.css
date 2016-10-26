@@ -5,7 +5,7 @@ body, html {
 	height: 100%;
 
 }
-#game {
+.gameWindow {
 	position: relative;
 	width: 100%;
 	height: 100%;
@@ -13,6 +13,14 @@ body, html {
 	overflow: hidden;
 	background: url(stardust.png);
 	cursor: crosshair;
+}
+.scoreWindow {
+	position: absolute;
+	font-size: 50px;
+	left: 10px;
+	top: 10px;
+	z-index: 1;
+	color: #FAEDC7;
 }
 .target {
 	top: 0;
@@ -24,12 +32,5 @@ body, html {
 	position: absolute;
 	border: 2px solid black;
 }
-#score {
-	position: absolute;
-	font-size: 50px;
-	left: 10px;
-	top: 10px;
-	z-index: 1;
-	color: #FAEDC7;
-}
+
 
