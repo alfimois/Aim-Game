@@ -4,11 +4,9 @@ $(document).ready( function() {
   var score      = $("#score");
   var countScore = 0;
 
-
   function random(min, max) {
     return Math.floor( Math.random() * (max - min + 1) ) + min;
   };
-
 
 	function newTarget() {
     var target = $("<div></div>", { class : "target" });
@@ -34,5 +32,4 @@ $(document).ready( function() {
   };
 
   setInterval(newTarget, time);
-
 });
