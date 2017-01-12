@@ -1,7 +1,7 @@
 $(document).ready( function() {
   const timeOfLifeTarget = Number( prompt("Напишите время появления новой мишени (в мс)") ) || 700;
-  let gameWindow         = $(".gameWindow");
-  let scoreWindow        = $(".scoreWindow");
+  const gameWindow       = $(".gameWindow");
+  const scoreWindow      = $(".scoreWindow");
   let countScore         = 0;
 
   function random(min, max) {
