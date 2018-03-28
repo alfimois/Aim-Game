@@ -1,5 +1,12 @@
 $(document).ready( function() {
-  const timeOfLifeTarget = Number( prompt("Введите время в миллисекундах. 1000 миллисекунд равняется 1 секунде. Стандартное значение равняется 1 секунде.") ) || 1000;
+  const timeOfLifeTarget = Number(
+    prompt(
+      "Введите время в миллисекундах. \
+       1000 миллисекунд равняется 1 секунде. \
+       Стандартное значение равняется 1 секунде. \
+       Чтобы включить режим на весь экран: нажмите F12"
+    )
+  ) || 1000;
   const gameWindow       = $(".gameWindow");
   const scoreWindow      = $(".scoreWindow");
   let countScore         = 0;
