@@ -1,5 +1,5 @@
 $(document).ready( function() {
-  const timeOfLifeTarget = Number( prompt("Time of appearance of the new target(ms). For example, you write: 1000. It`s equals 1000ms or 1 second. Default value equals 700ms. Enjoy :)") ) || 700;
+  const timeOfLifeTarget = Number( prompt("Введите время в миллисекундах. 1000 миллисекунд равняется 1 секунде. Стандартное значение равняется 1 секунде.") ) || 1000;
   const gameWindow       = $(".gameWindow");
   const scoreWindow      = $(".scoreWindow");
   let countScore         = 0;
