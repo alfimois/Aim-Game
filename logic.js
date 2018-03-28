@@ -15,7 +15,7 @@ $(document).ready(() => {
     return Math.floor( Math.random() * (max - min + 1) ) + min;
   };
 
-  const newTarget => {
+  const newTarget= () => {
     const target = $("<div></div>", { class : "target" });
     const left   = random(0, gameWindow.width()  - target.width()  - 65);
     const top    = random(0, gameWindow.height() - target.height() - 65);
